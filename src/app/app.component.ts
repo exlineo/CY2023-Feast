@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CY2023-feast';
-  soustitre:string = "L'application de gestion de vos soirées";
-  moustache:string = 'Affiche moi des moustache steuplé {{ !';
-  listeMoustaches:Array<string> = ['Moustache', 'Favoris'];
-  autreListeMoustaches:string[] = [];
 
   constructor(){};
 

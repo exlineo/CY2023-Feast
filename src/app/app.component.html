@@ -1,11 +1,10 @@
+<header>
+  <app-menu></app-menu>
+</header>
 <main>
-  <header>
-    <h1>{{ title }}</h1>
-    <h2>{{ soustitre }}</h2>
-    <app-menu></app-menu>
-  </header>
-  <section>
-   {{ moustache }} : {{ listeMoustaches.toString() }}
-  </section>
-  <app-footer></app-footer>
+  <!-- <app-accueil></app-accueil> -->
+  <router-outlet></router-outlet>
 </main>
+<footer>
+  <app-footer></app-footer>
+</footer>

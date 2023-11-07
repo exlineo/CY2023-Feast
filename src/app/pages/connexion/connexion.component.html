@@ -1,0 +1,14 @@
+<section>
+<form (submit)="auth.authentification()">
+    <fieldset>
+        <label>Votre identifiant</label>
+        <input name="id" placeholder="Saisissez votre identifiant" [(ngModel)]="auth.authID.id" required>
+    </fieldset>
+    <fieldset>
+        <label>Votre mot de passe</label>
+        <input name="mdp" type="password" placeholder="Saisissez votre mot de passe" [(ngModel)]="auth.authID.mdp" required>
+    </fieldset>
+    <button>Envoyer</button>
+    <button type="reset">Annuler</button>
+</form>
+</section>

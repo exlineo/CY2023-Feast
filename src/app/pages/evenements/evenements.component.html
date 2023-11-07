@@ -1,0 +1,23 @@
+<section>
+    <h1>Les utilisateurs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>L'événément</th>
+                <th>Nombre de places</th>
+                <th>Début</th>
+                <th>Fin</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of events.listeEvenements">
+                <td>{{ u.titre }}</td>
+                <td>{{ u.places }}</td>
+                <td>{{ u.horaires.debut }}</td>
+                <td>{{ u.horaires.fin }}</td>
+                <td>{{ u.date }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

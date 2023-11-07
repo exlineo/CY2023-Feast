@@ -1,0 +1,21 @@
+<section>
+    <h1>Les utilisateurs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of listeUsers">
+                <td>{{ u.nom }}</td>
+                <td>{{ u.prenom }}</td>
+                <td>{{ u.email }}</td>
+                <td><span *ngIf="u.statut == 'user'">{{ u.statut }}</span></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
